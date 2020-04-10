@@ -1,0 +1,18 @@
+        {
+            "acrylicOpacity" : 1,
+            "closeOnExit" : true,
+            "colorScheme" : "One Half Dark",
+            "cursorColor" : "#FFFFFF",
+            "cursorShape" : "bar",
+            //"fontFace" : "Source Code Pro For Powerline",
+            "fontFace": "Fira Mono",
+            "fontSize" : 10,
+            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+            "historySize" : 9001,
+            "name" : "Ubuntu",
+            "padding" : "5, 5, 5, 5",
+            "snapOnInput" : true,
+            "startingDirectory" : "C:\\workspace",
+            "useAcrylic" : false,
+            "source": "Windows.Terminal.Wsl"
+        }
