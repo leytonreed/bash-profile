@@ -30,6 +30,11 @@ if [[ ! -f $HOME/.aws/config || $(find "$HOME/.aws/config" -mtime +2 -print) ]];
         echo "!! YOUR AWS PROFILE LIST MAY BE OUTDATED !!"
 fi
 
+alias login='aws-azure-login --no-prompt'
+alias ll='ls -lF'
+alias la='ls -A'
+alias l='ls -CF'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 #alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
