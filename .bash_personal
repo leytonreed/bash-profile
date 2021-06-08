@@ -1,7 +1,7 @@
 #!/bin/bash
 # Backup SSH kays
-[[ -f /mnt/c/linux-backups/ssh-$(date +%F).zip ]] || zip -qqrj -P $SSH_BACKUP_PASSWORD $SSH_BACKUP_PATH/ssh-$(date +%F).zip $HOME/.ssh/
-find /mnt/c/linux-backups -type f -name 'ssh*.zip' -mtime +14 -delete
+[[ -f "$SSH_BACKUP_PATH/ssh-$(date +%F).zip" ]] || zip -qqrj -P "$SSH_BACKUP_PASSWORD" "$SSH_BACKUP_PATH/ssh-$(date +%F).zip" $HOME/.ssh/
+find "$SSH_BACKUP_PATH" -type f -name 'ssh*.zip' -mtime +14 -delete
 
 # Source git-bash helpers
 export GITAWAREPROMPT=~/bash-profile/.bash/git
