@@ -22,3 +22,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
+# Setup AWS for CCI
+if [[ ! -f $HOME/.aws/config || $(find "$HOME/.aws/config" -mtime +2 -print) ]]; then
+        echo "!! YOUR AWS PROFILE LIST MAY BE OUTDATED !!"
+fi
