@@ -4,7 +4,7 @@
 find /mnt/c/linux-backups -type f -name 'ssh*.zip' -mtime +14 -delete
 
 # Source git-bash helpers
-export GITAWAREPROMPT=~/.bash/git
+export GITAWAREPROMPT=~/bash-profile/.bash/git
 source "${GITAWAREPROMPT}/main.sh"
 
 # Set PS1
