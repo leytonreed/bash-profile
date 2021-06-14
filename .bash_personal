@@ -24,6 +24,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 export GOROOT=/usr/local/go
+export PATH="${PATH}:.local/bin/"
 
 # Setup AWS for CCI
 if [[ ! -f $HOME/.aws/config || $(find "$HOME/.aws/config" -mtime +2 -print) ]]; then
